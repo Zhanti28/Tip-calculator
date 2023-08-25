@@ -1,0 +1,20 @@
+# num_char = len(input("What is your name?"))
+# num_char2 = str(num_char)
+# print("Yor name has " + num_char2 + " Characters")
+print("Welcome to the tip calculator")
+num1 =input("What is the total bill? $")
+num2= input("How much tip would you like to give? 10, 12 or 15?")
+num3 = input("How many people to split the bill?")
+num1 = int(num1)
+num2 = int(num2)
+num3 = int(num3)
+num4 = num2 / 100
+num5 = num1 / num3
+sum = num5 + (num1 / num3 * num4)
+round(sum,2)
+sum = "{:.2f}".format(sum) 
+print(f"Each person has to pay {sum} $")
+# num = input("?")
+# num2= int(num)
+# num3= num2 / 100
+# print(num3)
